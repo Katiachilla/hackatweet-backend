@@ -17,7 +17,7 @@ router.get('/tweet', (req, res) => {
 
 
 // à compléter : 
-//router.post()
+router.post('/tweet/:', (req, res) => {});
 
 
 

@@ -23,10 +23,7 @@ router.post('/signup', (req, res) => {
         username: req.body.username,
         password: hash,
         token: uid2(32),
-        canBookmark: true,
-        tweets : [{
-          date : req.body.date,
-          message : req.body.message,}]
+        canRemove: true,
       });
 
       newUser.save().then(newDoc => {

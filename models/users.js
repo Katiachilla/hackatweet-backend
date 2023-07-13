@@ -6,9 +6,6 @@ const userSchema = mongoose.Schema({
   password: String,
   token: String,
   canRemove: Boolean,
-  tweets : {
-  date : Date,
-  message : String,}
 });
 
 const User = mongoose.model('users', userSchema);
