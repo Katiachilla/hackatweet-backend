@@ -6,16 +6,16 @@ const User = require('../models/users');
 
 
 // récupération de tous les tweet
-router.get('/tweets',  (req, res) => {
-    .then((response) => response.json())
-    .then(data => {
-      if (data.status === 'ok') {
-        res.json({ tweet: data.tweets });
-      } else {
-        res.json({ tweets: [] });
-      }
-    });
-});
+// router.get('/tweets',  (req, res) => {
+//     .then((response) => response.json())
+//     .then(data => {
+//       if (data.status === 'ok') {
+//         res.json({ tweet: data.tweets });
+//       } else {
+//         res.json({ tweets: [] });
+//       }
+//     });
+// });
 
 
 
